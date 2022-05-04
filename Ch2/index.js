@@ -5,8 +5,8 @@
 //   hash += '#'
 //   num++
 // }
-for (let line = '#'; line.length < 8; line += '#')
-console.log(line)
+// for (let line = '#'; line.length < 8; line += '#')
+// console.log(line)
 
 // for (let i = 1; i <= 100; i++){
 //   if (i % 3 === 0 && i % 5 === 0){
