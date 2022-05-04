@@ -19,3 +19,25 @@ function minimum(num1, num2){
 // }
 
 // console.log(isEven(-33))
+
+function countB(string){
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === 'B'){
+      count++;
+    }
+  }
+  return count 
+}
+
+function countChar(string, char){
+  let count = 0;
+  for (let i = 0; i < string.length; i++) {
+    if (string[i] === char){
+      count++;
+    }
+  }
+  return count
+}
+
+console.log(countChar('Jooosie', 'o'))
