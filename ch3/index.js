@@ -21,13 +21,7 @@ function minimum(num1, num2){
 // console.log(isEven(-33))
 
 function countB(string){
-  let count = 0;
-  for (let i = 0; i < string.length; i++) {
-    if (string[i] === 'B'){
-      count++;
-    }
-  }
-  return count 
+  return countChar(string, "B")
 }
 
 function countChar(string, char){
