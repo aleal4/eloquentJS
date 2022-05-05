@@ -88,3 +88,29 @@ function nth(list, n){
 // console.log(listToArray(arrayToList([10, 20, 30])));
 // console.log(prepend(10, prepend(20, null)));
 // console.log(nth(arrayToList([10, 20, 30]), 2));
+
+
+function deepEqual(valOne, valTwo){
+  if (valOne === valTwo) return true
+
+  if (valOne == null || typeof valOne != 'object' || valTwo == null || typeof valTwo != 'object') {
+    return false
+  }  
+
+  let keysOne = Object.keys(valOne), keysTwo = Object.keys(valTwo)
+
+  if (keysOne.length !== keysTwo.length) return false
+
+  for (let key of keysOne){
+    if (!keysTwo.includes(key) || !deepEqual(valOne[key], valTwo[key])) return false
+  }
+
+  return true
+
+}
+
+let obj = {here: {is: "an"}, object: 2};
+
+console.log(deepEqual(obj, obj));
+console.log(deepEqual(obj, {here: 1, object: 2}));
+console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
