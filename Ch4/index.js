@@ -22,4 +22,16 @@ function sum(array){
   return total
 }
 
-console.log(range(1, 10, 6))
+// console.log(range(1, 10, 6))
+
+function reverseArray(array){
+  newArr = []
+  for (let i = array.length - 1; i >= 0; i--){
+    newArr.push(array[i])
+  }
+  return newArr
+}
+
+function reverseArrayInPlace(){
+  
+}
