@@ -28,3 +28,7 @@ function noisy(f){
 //     console.log(n, "is even")
 //   })
 // })
+
+let arrays = [[1, 2, 3], [4, 5], [6]];
+
+console.log(arrays.reduce((flat, current) => flat.concat(current), []))
